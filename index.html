@@ -10,28 +10,45 @@
 
   <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="min-h-screen font-P bg-Img-M bg-col-R bg-repeat-round px-5 py-16 sm:py-20">
+<body class="min-h-screen max-w-[1440px] font-P bg-Img-M bg-col-R bg-repeat-round px-5 py-16 sm:py-20 lg:flex lg:m-auto lg:bg-Img-D lg:py-0 lg:px-14">
 
-  <main>
+  <main class="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between">
 
-    <div class="max-w-sm m-auto text-center text-white mb-12 sm:mb-16 sm:max-w-lg">
-      <h2 class="text-3xl font-bold mb-5 sm:mb-7">Learn to code by watching others</h2>
-      <p class="text-base font-medium">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    <div class="max-w-sm m-auto text-center text-white mb-12 sm:mb-16 md:max-w-lg lg:max-w-xl lg:w-[40%] lg:text-left lg:m-0 xl:w-[45%]">
+      <h2 class="text-3xl font-bold mb-5 sm:mb-7 lg:text-5xl xl:text-6xl">Learn to code by watching others</h2>
+      <p class="text-base lg:text-lg xl:text-xl">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
     </div>
 
-    <section>
+    <section class="max-w-sm m-auto sm:max-w-md md:max-w-lg lg:w-[55%] lg:max-w-xl">
 
-      <div class="text-center bg-col-B rounded-lg mb-4 shadow-bS sm:w-11/12 sm:m-auto sm:mb-5 md:w-4/5">
-        <p class="px-14 py-4 text-white font-semibold">Try it free 7 days <span class="text-col-GB font-normal">then $20/mo. thereafter</span></p>
+      <div class="text-center bg-col-B rounded-lg mb-4 shadow-bS sm:m-auto sm:mb-5">
+        <p class="px-14 py-5 text-white font-semibold">Try it free 7 days <span class="text-col-GB font-normal">then $20/mo. thereafter</span></p>
       </div>
 
-      <div class="bg-white p-5 rounded-lg shadow-bS sm:w-11/12 sm:m-auto md:w-4/5">
-        <form class="">
-          <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="text" placeholder="First Name">
-          <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="text" placeholder="Last Name ">
-          <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="email" placeholder="Email Address">
-          <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="password" placeholder="Password">
-          <input class="w-full rounded-md p-4 mb-4 uppercase cursor-pointer bg-col-G text-white font-medium shadow-bSG" type="submit" value="Claim your free trial">
+      <div class="bg-white p-5 rounded-lg shadow-bS sm:m-auto">
+        <form id="">
+          <div>
+            <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="text" name="firstName" placeholder="First Name">
+            <p class="hidden -mt-2 mb-4 text-col-R text-right text-xs italic font-medium" id="firstName">First Name cannot be empty</p>
+          </div>
+          
+          <div>
+            <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="text" name="lastName" placeholder="Last Name">
+            <p class="hidden -mt-2 mb-4 text-col-R text-right text-xs italic font-medium" id="lastName">Last Name cannot be empty</p>
+          </div>
+          
+          <div>
+            <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="email" name="email" placeholder="Email Address">
+            <p class="hidden -mt-2 mb-4 text-col-R text-right text-xs italic font-medium" id="email">Looks like this is not an email</p>
+          </div>
+          
+          <div>
+            <input class="w-full border-[1px] rounded-md border-col-GB p-4 mb-4 placeholder-col-GB font-semibold" type="password" name="password" placeholder="Password">
+            <p class="hidden -mt-2 mb-4 text-col-R text-right text-xs italic font-medium" id="password">Password cannot be empty</p>
+          </div>
+          
+          <input class="w-full rounded-md p-4 mb-4 uppercase cursor-pointer bg-col-G text-white font-medium shadow-bSG tracking-wider hover:opacity-70" type="submit" nome="submit" value="Claim your free trial">
+          
           <p class="text-center text-xs text-col-GB font-medium px-1">By clicking the button, you are agreeing to our <a class="text-col-R font-bold" href="#">Terms and Services</a></p>
         </form>
       </div>
@@ -40,5 +57,7 @@
 
   </main>
   
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/functions.js"></script>
 </body>
 </html>

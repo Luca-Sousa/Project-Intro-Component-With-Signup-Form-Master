@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'col-R': 'hsl(0, 100%, 74%) ',
+        'col-R': 'hsl(0, 100%, 74%)',
         'col-G': 'hsl(154, 59%, 51%)',
         'col-B': 'hsl(248, 32%, 49%)',
         'col-DB': 'hsl(249, 10%, 26%)',
