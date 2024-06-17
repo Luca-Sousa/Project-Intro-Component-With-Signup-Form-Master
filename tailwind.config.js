@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/*.css'],
+  content: ['./index.html', './src/*.{css,js}'],
   theme: {
     extend: {
       colors: {
@@ -8,18 +8,18 @@ module.exports = {
         'col-G': 'hsl(154, 59%, 51%)',
         'col-B': 'hsl(248, 32%, 49%)',
         'col-DB': 'hsl(249, 10%, 26%)',
-        'col-GB': 'hsl(246, 25%, 77%)'
+        'col-GB': 'hsl(246, 25%, 77%)',
       },
       fontFamily: {
-        'P': 'Poppins'
+        'P': 'Poppins',
       },
       backgroundImage: {
-        'Img-D': "url('/images/bg-intro-desktop.png')",
-        'Img-M': "url('/images/bg-intro-mobile.png')"
+        'Img-D': "url('/src/assets/images/bg-intro-desktop.png')",
+        'Img-M': "url('/src/assets/images/bg-intro-mobile.png')",
       },
       boxShadow: {
         'bS': '0px 8px 0px 0px rgba(0,0,0,0.15)',
-        'bSG': '0px 5px 0px 0px rgba(73,174,132,255)'
+        'bSG': '0px 5px 0px 0px rgba(73,174,132,255)',
       }
     },
   },
