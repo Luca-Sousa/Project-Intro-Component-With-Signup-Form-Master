@@ -7,9 +7,12 @@
 
 @layer utilities {
     .inputStyle{
-        @apply w-full p-4 border border-col-GB rounded-md  placeholder-gray-500 font-semibold;
+        @apply w-full p-4 border rounded-md font-semibold outline-gray-400;
     }
     .pStyle{
         @apply hidden -space-y-5 mt-1 text-right text-xs text-col-R italic font-medium;
+    }
+    .imgErrorStyle{
+        @apply absolute inset-4 left-[85%] lg:left-[90%];
     }
 }
