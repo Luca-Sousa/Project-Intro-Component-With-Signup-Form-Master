@@ -22,33 +22,6 @@ module.exports = {
         'bSG': '0px 5px 0px 0px rgba(73,174,132,255)',
         'bMSG': 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;',
       },
-      animation: {
-        'move-in': 'move-in 1.5s forwards',
-        'move-out': 'move-out 4s forwards',
-      },
-      keyframes: {
-        'move-in': {
-          'from': {
-            opacity:'0',
-            top: '-8rem',
-          },
-          'to': {
-            opacity: '1',
-            top: '7rem',
-          },
-        },
-        'move-out': {
-          'from': {
-            opacity:'1',
-            top: '7rem',
-          },
-          'to': {
-            opacity: '0',
-            top: '-100vh',
-          },
-        },
-      },
     },
   },
 }
-
