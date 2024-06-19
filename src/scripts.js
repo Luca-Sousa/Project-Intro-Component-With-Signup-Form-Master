@@ -71,11 +71,11 @@ $(function(){
             inputs.forEach(input => input.prop('disabled', true));
         
             setTimeout(function(){
-                animate.removeClass('animate-move-in').addClass('animate-move-out');
+                animate.removeClass('animate__bounceInDown').addClass('animate__bounceOutUp');
                 inputs.slice(0, 4).forEach(input => input.val(''));
         
                 setTimeout(function() {
-                    animate.removeClass('animate-move-out flex').addClass('hidden animate-move-in');
+                    animate.removeClass('animate__bounceOutUp flex').addClass('hidden animate__bounceInDown');
                     inputs.forEach(input => input.prop('disabled', false));
                 }, 500);
             }, 5000);
